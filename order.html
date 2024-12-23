@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Items</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Order Your Food</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <section id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li>Pizza <button onclick="addToCart('Pizza')">Add to Cart</button></li>
+        <li>Burger <button onclick="addToCart('Burger')">Add to Cart</button></li>
+        <li>Pasta <button onclick="addToCart('Pasta')">Add to Cart</button></li>
+        <li>Ice Cream <button onclick="addToCart('Ice Cream')">Add to Cart</button></li>
+      </ul>
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <button onclick="submitOrder()">Submit Order</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Online Food Delivery</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
